@@ -16,7 +16,7 @@ Taco Tron features:
 - **HTML5**
 - **CSS3** (Flexbox and Grid)
 - **JavaScript** (for interactive glow effect)
--**Pexels** (for using photos that are public domain and free to use)
+- **Pexels** (for using photos that are public domain and free to use)
 - **Google Fonts**: Orbitron, Exo 2, Michroma
 
 ## Challenges Faced
