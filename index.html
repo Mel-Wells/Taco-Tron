@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Taco Tron</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Michroma&family=Orbitron&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <!-- Baby's first favicon. Perfect for branding-->
+    <link rel="icon" href="images/taco-icon.png" type="image/png">
+</head>
+<body>
+    <!-- This bad boi has the logo and navigation thingies, make it flex.-->
+    <header>
+        <div class="logo"> 
+            <h1>Taco Tron</h1>
+            <img src="images/taco-icon.png" alt="icon photo of a taco" id="header-img">
+        </div>
+        
+        <nav>
+            <ul>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#order-form">Order</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#locations">Locations</a></li>
+            </ul>
+        </nav>
+    </header>
+    <hr>
+    <main>
+        <!-- Menu creation starts here -->
+        <h2 id="menu">Menu</h2>
+        <p id="disclaimer"><i>Note: All food comes with a cheese choice of goat cheese, vegan, pepperjack, or plain cheddar cheese.<br>
+        for drinks we have water, Topo Chico, Mexican Coke, and whatever beer is on draft.</i></p>
+        <section class="food-container">
+            <!-- Steak tacos will be here-->
+            <article class="menu-card">
+                <img src="images/pexels-cristian-rojas-7613568.jpg" alt="steak tacos" class="menu-image">
+                <h3>Steak Tacos- <i>$4.99</i></h3>
+                <p class="main-info">Our Steak Tacos feature tender, marinated steak, flame-grilled to perfection and sliced thin for maximum flavor. 
+                    Nestled in warm, freshly made corn tortillas, these tacos are topped with crisp diced onions, fragrant cilantro, and a splash of tangy lime juice.
+                </p>
+                <p class="comment"><i># Comes with your choice of salsa, verde, guac, queso, spicy queso, and salsa rojo.</i></p>
+            </article>
+            <!-- Fish tacos will be here -->
+            <article class="menu-card">
+                <img src="images/pexels-cristian-rojas-8448322.jpg" alt="fish tacos" class="menu-image">
+                <h3>Surfing Taco- <i>$5.99</i></h3>
+                <p class="main-info">
+                    This taco rides the flavor waves like a pro! 
+                    Featuring crispy panko-breaded salmon, it's perfectly seasoned with our signature lime chili blend and topped with fresh cilantro 
+                    and zesty pico de gallo for a bold, unforgettable bite.
+                </p>
+                <p class="comment"><i># Comes with your choice of salsa, verde, guac, queso, spicy queso, and salsa rojo.</i></p>
+            </article>
+            <article class="menu-card">
+                <!-- Tacos made from shrimp will be here-->
+                <img src="images/pexels-snappr-27365273.jpg" alt="shrimp tacos" class="menu-image">
+                <h3>Shrimpin Tacos- <i>$3.99</i></h3>
+                <p class="main-info">
+                    Dive into the ocean-fresh taste of our Shrimpin' Tacos! 
+                    We start with succulent shrimp, seasoned with a blend of smoky paprika, garlic, and citrus zest, then pan-seared to juicy perfection.
+                    Finished with a sprinkle of fresh cilantro and a squeeze of lime, this taco is a seafood lover's dream!
+                </p>
+                <p class="comment"><i># Comes with your choice of salsa, verde, guac, queso, spicy queso, and salsa rojo.</i></p>
+            </article>
+            <!-- Chicken tacos will be here-->
+            <article class="menu-card">
+                <img src="images/pexels-styves-exantus-7162424-7041784.jpg" alt="chicken tacos" class="menu-image">
+                <h3>You gotta be chickn' me tacos- <i>$3.99</i></h3>
+                <p class="main-info">
+                    With a name as fun as this, rest assured that you'll still be getting a quality taco.
+                    Fired up on our grill with spices that will make everyone's ancestors smile, you're in for a juicy flavor packed taco.
+                </p>
+                <p class="comment"><i># Comes with your choice of salsa verde, guac, queso, spicy queso, or salsa rojo.</i></p>
+            </article>
+            <article class="menu-card">
+                <!-- Taquitos will be here-->
+                <img src="images/pexels-cristian-rojas-8448317.jpg" alt="taquitos" class="menu-image">
+                <h3>Taquito time- <i>$8.99</i></h3>
+                <p class="main-info">
+                    Not in the mood for tacos? We got you covered!
+                    Indulge yourself in our warm, made on site taquitos. 
+                    Comes with your choice of filling!
+                    The tortillas are also gluten free and fried up in vegetable oil, making it a great choice for vegans!<br><br>
+                    <b>The choice of fillings are: Steak, chicken, shrimp, or cheese.</b>
+                </p>
+                <p class="comment">
+                    <i># Comes with your choice of salsa verde, guac, queso, spicy queso, or salsa rojo.</i>
+                </p>
+            </article>
+            <!-- Chips and salsa will be here-->
+            <article class="menu-card">
+                <img src="images/pexels-snappr-27603336.jpg" alt="chips with salsa and queso" class="menu-image">
+                <h3>Tortilla chips of champions- <i>$2.00</i></h3>
+                <p class="main-info">
+                    Behold, the champion of appetizers! Our chips are house made and seasoned with lime and sea salt.
+                </p>
+                <p class="comment"><i># Comes with your choice of salsa verde, guac, queso, spicy queso, or salsa rojo.</i></p>
+            </article>  
+        </section>
+    </main>
+    <h2 id="order-form">Place your order</h2>
+    <hr>        
+    <form>
+        <section class="form-container">
+            <fieldset>
+                <legend>Get your food on</legend><br>
+                <!--Steak Taco section-->
+                <label for="steakTacos">Steak Tacos ($4.99 Each)</label>
+                <input type="number" id="steakTacos" name="steakTacos" min="0" value="0" required>
+                <br>
+                <br>
+
+                <!--Surfing Taco section-->
+                <label for="surfingTaco">Surfing Taco ($5.99 Each)</label>
+                <input type="number" id="surfingTaco" name="surfingTaco" min="0" value="0">
+                <br><br>
+                    
+                <!--Shrimpin Taco section-->
+                <label for="shrimpinTaco">Shrimpin taco ($3.99 Each)</label>
+                <input type="number" id="shrimpinTaco" name="shrimpinTaco" min="0" value="0">
+                <br><br>
+
+                <!--You Gotta Be Chickn' Me Taco section-->
+                <label for="chickenTaco">You Gotta Be Chickn' Me Taco ($3.99 Each)</label>
+                <input type="number" id="chickenTaco" name="chickenTaco" min="0" value="0">
+                <br><br>
+
+                <!--Taquito Section-->
+                <label for="taquito">Taquito time ($8.99 per plate)</label>
+                <input type="number" id="taquito" name="taquito" min="0" value="0">
+                </fieldset>
+                <br><br>
+                <fieldset>
+                    <legend>Cheese it up!</legend>
+                    <p><i>Note: if you pick more than one cheese, it is an additional $0.99 per cheese added!</i></p>
+                    <label><input type="checkbox" name="cheese" value="goat" required>Goat Cheese</label><br>
+                    <label><input type="checkbox" name="cheese" value="vegan">Vegan cheese</label><br>
+                    <label><input type="checkbox" name="cheese" value="pepperjack">Pepperjack Cheese</label><br>
+                    <label><input type="checkbox" name="cheese" value="cheddar">Cheddar Cheese</label><br>
+                </fieldset>
+                <br>
+
+                <fieldset>
+                    <legend>Don't be dehydrated!</legend>
+                    <label><input type="checkbox" name="drink" value="Topo Chico" required>Topo Chico($2.99)</label><br>
+                    <label><input type="checkbox" name="drink" value="water">Water(free)</label><br>
+                    <label><input type="checkbox" name="drink" value="draft beer">Draft Beer(price will vary, just ask what's on tap)</label><br>
+                    </fieldset>
+                    <br>
+                    <div id="textstyle">
+                        <p>Got any special requests? Put em down here and we'll have our robots work their magic and science for you.</p>
+                        <textarea id="question" name="question" rows="10" cols="40" maxlength="500"></textarea>
+                    </div>
+                    <input type="submit" value="Go to checkout" id="submit">
+                </fieldset>
+        </section>
+    </form>
+</body>
+<!--- Finally, the footer.-->
+<footer><p>Made with love by Mel ❤️</p></footer>
+</html>
